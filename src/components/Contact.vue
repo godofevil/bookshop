@@ -1,0 +1,98 @@
+<template lang="pug">
+    .contacts#contacts
+        .contacts__wrap.wrap
+            .contacts__title.block__title Contacts
+            .contacts__block
+                .contacts__left
+                    .contacts__item
+                        span.contacts__item--blue Phone:
+                        |  000-000-0000
+                    .contacts__item
+                        span.contacts__item--blue Email:
+                        |  your@example.com
+                    .contacts__item.contacts__item--address 1701 N. Charles Street Baltimore, MD 21202
+                    .contacts__item--sm
+                        | MON–FRI 09.00 — 18.00
+                        br
+                        | SAT–SUN 10.00 — 18.00
+                .contacts__right
+                    input.contacts__input(placeholder="Name")
+                    input.contacts__input(placeholder="Email Address")
+                    textarea.contacts__input(placeholder="Email Address")
+                    .contacts__button.button__gradient Send message
+</template>
+
+<style lang="sass" scoped>
+    .contacts
+        &__wrap
+            padding:
+                top: 120px
+                bottom: 50px
+        &__block
+            display: grid
+            padding-top: 40px
+            grid:
+                template-columns: repeat(2, 1fr)
+                column-gap: 40px
+        &__left, &__right
+            display: flex
+            flex-direction: column
+        &__left
+            align-items: flex-end
+            padding-top: 20px
+        &__right
+            justify-content: space-between
+            align-items: baseline
+            & textarea
+                resize: none
+                height: 109px
+        &__item
+            font-size: 18.18px
+            line-height: 34.1px
+        &__item--blue
+            color: #30739f
+        &__item--address
+            margin-top: 25px
+            margin-bottom: 25px
+        &__item--sm
+            font-size: 16px
+            line-height: 23.68px
+        &__input
+            width: 425px
+            padding: 18px 23px
+            background: #161337
+            margin-bottom: 22px
+            border: 1px solid #4a4866
+            font-size: 15.91px
+            color: #fff
+            border-radius: 5px
+            outline: 0
+            transition: background .3s
+            &::placeholder
+                color: #fff
+            &:focus
+                background: #75d1bf0d
+        &__button
+            margin-top: 20px
+
+    @media(max-width: 960px)
+        .contacts
+            &__wrap
+                padding-top: 20px
+                padding-bottom: 20px
+            &__block
+                grid-template-columns: auto
+                grid-gap: 20px
+                padding-top: 0
+                & > *
+                    align-items: center
+            &__item
+                text-align: center
+            &__input
+                width: 90%
+
+    @media(max-width: 640px)
+        .contacts__item, .contacts__item--sm
+            font-size: 14px
+            line-height: 20px
+</style>
