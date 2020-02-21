@@ -8,15 +8,15 @@
                     img(src="@/assets/close.svg")
                 ul.menu__list
                     li.menu__item
-                        a.menu__link(href="#") eBook Purchase
+                        a.menu__link(href="#steps") eBook Purchase
                     li.menu__item
-                        a.menu__link(href="#") eBook Preview
+                        a.menu__link(href="#preview") eBook Preview
                     li.menu__item
-                        a.menu__link(href="#") Reviews
+                        a.menu__link(href="#reviews") Reviews
                     li.menu__item
-                        a.menu__link(href="#") Author
+                        a.menu__link(href="#author") Author
                     li.menu__item
-                        a.menu__link(href="#") Contact
+                        a.menu__link(href="#contacts") Contact
     </div>
 </template>
 
@@ -45,9 +45,8 @@
         position: absolute
         width: 50px
         height: 50px
-        top: 25px
-        right: 25px
-        color: red
+        top: 10px
+        right: 10px
         box-sizing: border-box
     .responsive
         &__button
@@ -66,7 +65,7 @@
             left: 0
             display: flex
             justify-content: center
-            padding: 50px 0
+            padding: 70px 0 20px 0
             z-index: 2
         &__close
             @include button
