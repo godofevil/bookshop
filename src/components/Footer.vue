@@ -3,7 +3,7 @@
         .footer__wrap.wrap
             .footer__top
                 .footer__logo
-                    img(src="@/assets/logo-footer.png")
+                    img(src="@/assets/logo-footer.png" alt="Logo")
                 nav.footer__nav
                     ul.footer__list
                         li.footer__item
@@ -18,11 +18,11 @@
                             a.footer__link(href="#contacts") Contact
                 .footer__socials
                     a(href="fb.com")
-                        img(src="@/assets/facebook.svg")
+                        img(src="@/assets/facebook.svg" alt="Facebook")
                     a(href="instagram.com")
-                        img(src="@/assets/instagram.svg")
+                        img(src="@/assets/instagram.svg" alt="Instagram")
                     a(href="pinterest.com")
-                        img(src="@/assets/pinterest.svg")
+                        img(src="@/assets/pinterest.svg" alt="Pinterest")
             .footer__credits © 2018 Hogash Studio. All rights reserved.
 </template>
 

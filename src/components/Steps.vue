@@ -6,28 +6,28 @@
             .steps__list
                 .steps__item
                     .step__icon.circle__icon(steps-number="1")
-                        img(src="@/assets/book.png")
+                        img(src="@/assets/book.png" alt="Step 1")
                     .step__title eBook Preview
                     .step__description
                         |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                 .steps__divider
                 .steps__item
                     .step__icon.circle__icon(steps-number="2")
-                        img(src="@/assets/cash-register.png")
+                        img(src="@/assets/cash-register.png" alt="Step 2")
                     .step__title eBook Preview
                     .step__description
                         |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                 .steps__divider
                 .steps__item
                     .step__icon.circle__icon(steps-number="3")
-                        img(src="@/assets/support.png")
+                        img(src="@/assets/support.png" alt="Step 3")
                     .step__title eBook Preview
                     .step__description
                         |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                 .steps__divider
                 .steps__item
                     .step__icon.circle__icon(steps-number="4")
-                        img(src="@/assets/reading.png")
+                        img(src="@/assets/reading.png" alt="Step 4")
                     .step__title eBook Preview
                     .step__description
                         |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.

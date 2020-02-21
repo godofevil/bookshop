@@ -7,7 +7,7 @@
                 .main__text3 For our student community
                 button.main__button.button__gradient Get the deal
             .main__right
-                img(src="@/assets/main.png")
+                img(src="@/assets/main.png" alt="Background")
                 .main__slider 02 / 05
 </template>
 

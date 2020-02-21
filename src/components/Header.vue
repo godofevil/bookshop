@@ -3,15 +3,13 @@
         .header__wrap.wrap
             .header__top
                 a.header__link(href="/")
-                    img.header__logo(src="@/assets/logo.png")
+                    img.header__logo(src="@/assets/logo.png" alt="Logo")
                     .header__title Bookshop
                 .header__search
                     input.search__input(placeholder="Search..." type="search")
                 .header__login
                     a(href="/")
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="22.15" height="23.156" viewBox="0 0 22.15 23.156">
-                          <path d="M16.098,14.210 C17.991,12.751 19.212,10.494 19.212,7.954 C19.212,3.556 15.564,-0.010 11.066,-0.010 C6.567,-0.010 2.919,3.556 2.919,7.954 C2.919,10.494 4.140,12.751 6.034,14.210 C2.638,15.901 0.248,19.244 -0.016,23.160 L1.467,23.160 C1.753,19.493 4.191,16.420 7.546,15.129 C8.613,15.630 9.804,15.919 11.066,15.919 C12.328,15.919 13.518,15.630 14.585,15.129 C17.940,16.420 20.378,19.493 20.664,23.160 L22.147,23.160 C21.884,19.244 19.493,15.901 16.098,14.210 ZM11.066,14.471 C7.384,14.471 4.401,11.554 4.401,7.954 C4.401,4.354 7.384,1.437 11.066,1.437 C14.747,1.437 17.731,4.354 17.731,7.954 C17.731,11.554 14.747,14.471 11.066,14.471 Z" />
-                        </svg>
+                        img(src="@/assets/login.svg" alt="Login")
             nav.header__nav.nav
                 ul.nav__list
                     li.nav__item
@@ -39,6 +37,13 @@
 
 <style lang="sass" scoped>
     @import './../sass/_colors.sass'
+
+    .search-fade-enter input
+        width: 20%
+    .search-fade-enter-to input
+        width: 100%
+    .search-fade-enter-active
+        transition: opacity .5s
 
     .header
         background: linear-gradient(270deg, rgba(26,35,75,1) 0%, rgba(22,22,55,1) 100%)
@@ -71,8 +76,8 @@
                 fill: $primary-blue
 
     .search__input
-        background: url('./../assets/search.svg') no-repeat 20px 50%
-        min-width: 580px
+        background: url('./../assets/search.svg') no-repeat 18px 50%
+        width: 580px
         height: 50px
         outline: 0
         border: 1px solid $primary-grey
@@ -126,7 +131,7 @@
                 justify-self: flex-end
             &__search
         .search__input
-            min-width: 200%
+            width: 200%
         .nav__item
             margin-right: 30px
 
@@ -135,7 +140,10 @@
             display: none
         .header
             &__top
-                grid-template-columns: 50%
+                grid-template-columns: 1fr
         .search__input
-            min-width: 100%
+            width: 30%
+            transition: width .3s
+            &:focus
+                width: 100%
 </style>

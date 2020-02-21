@@ -17,6 +17,8 @@
                         a.menu__link(href="#author") Author
                     li.menu__item
                         a.menu__link(href="#contacts") Contact
+                    li.menu__item
+                        a.menu__link(href="#") Sign In
     </div>
 </template>
 
@@ -44,14 +46,13 @@
         justify-content: center
         position: absolute
         width: 50px
-        height: 50px
+        height: 40px
         top: 10px
         right: 10px
         box-sizing: border-box
     .responsive
         &__button
             @include button
-            background: #fff
             display: none
             border-radius: 10px
             @media (max-width: 640px)

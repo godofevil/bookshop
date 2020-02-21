@@ -5,11 +5,11 @@
             .info__text--sm copies sold all over the world
             .info__socials
                 a(href="fb.com")
-                    img(src="@/assets/facebook-logo.png")
+                    img(src="@/assets/facebook-logo.png" alt="Facebook")
                 a(href="instagram.com")
-                    img(src="@/assets/instagram-logo.png")
+                    img(src="@/assets/instagram-logo.png" alt="Instagram")
                 a(href="twitter.com")
-                    img(src="@/assets/twitter-logo.png")
+                    img(src="@/assets/twitter-logo.png" alt="Twitter")
 </template>
 
 <style lang="sass" scoped>

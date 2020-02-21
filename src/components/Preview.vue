@@ -14,19 +14,19 @@
                     .preview__list
                         .preview__item
                             .preview__icon.circle__icon
-                                img(src="@/assets/printer.png")
+                                img(src="@/assets/printer.png" alt="Ready to pint")
                             .preview__description
                                 .preview__text--bg Ready to print
                                 .preview__text--sm Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                         .preview__item
                             .preview__icon.circle__icon
-                                img(src="@/assets/open-book.png")
+                                img(src="@/assets/open-book.png" alt="Easy to read")
                             .preview__description
                                 .preview__text--bg Easy to read
                                 .preview__text--sm Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                         .preview__item
                             .preview__icon.circle__icon
-                                img(src="@/assets/file.png")
+                                img(src="@/assets/file.png" alt="Well organised")
                             .preview__description
                                 .preview__text--bg Well organised
                                 .preview__text--sm Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.

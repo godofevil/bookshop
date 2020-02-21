@@ -6,7 +6,7 @@
             .reviews__carousel
                 .reviews__item
                     .client__avatar
-                        img(src="@/assets/client.png")
+                        img(src="@/assets/client.png" alt="Client photo")
                     .client__name Andrei Fredy
                     .client__description client from romania
                     .client__review
@@ -14,11 +14,11 @@
                     .client__rate Rate this review
                     .client__stars
                         - for(var i = 0; i < 4; i++)
-                            img(src="@/assets/star.png")
-                        img(src="@/assets/halfstar.png")
+                            img(src="@/assets/star.png" alt="Rate")
+                        img(src="@/assets/halfstar.png" alt="Rate")
                 .reviews__item
                     .client__avatar
-                        img(src="@/assets/client.png")
+                        img(src="@/assets/client.png" alt="Client photo")
                     .client__name Andrei Fredy
                     .client__description client from romania
                     .client__review
@@ -26,11 +26,11 @@
                     .client__rate Rate this review
                     .client__stars
                         - for(var i = 0; i < 4; i++)
-                            img(src="@/assets/star.png")
-                        img(src="@/assets/halfstar.png")
+                            img(src="@/assets/star.png" alt="Rate")
+                        img(src="@/assets/halfstar.png" alt="Rate")
                 .reviews__item
                     .client__avatar
-                        img(src="@/assets/client.png")
+                        img(src="@/assets/client.png" alt="Client photo")
                     .client__name Andrei Fredy
                     .client__description client from romania
                     .client__review
@@ -38,8 +38,8 @@
                     .client__rate Rate this review
                     .client__stars
                         - for(var i = 0; i < 4; i++)
-                            img(src="@/assets/star.png")
-                        img(src="@/assets/halfstar.png")
+                            img(src="@/assets/star.png" alt="Rate")
+                        img(src="@/assets/halfstar.png" alt="Rate")
 </template>
 
 <style lang="sass" scoped>

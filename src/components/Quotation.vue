@@ -1,6 +1,6 @@
 <template lang="pug">
     .quotation#author
-        img(src="@/assets/quotation.png")
+        img(src="@/assets/quotation.png" alt="Background")
         .quotation__wrap.wrap
             .quotation__left
             .quotation__right
