@@ -8,7 +8,11 @@
                 button.main__button.button__gradient Get the deal
             .main__right
                 img(src="@/assets/main.png" alt="Background")
-                .main__slider 02 / 05
+                .main__slider
+                    .slider__line
+                    .slider__text
+                        span.slider__text--blue 02
+                        |  / 05
 </template>
 
 <style lang="sass" scoped>
@@ -50,10 +54,31 @@
             padding-bottom: 53px
             font-weight: 300
             white-space: wrap
-
         &__slider
             padding-top: 40px
+            text-align: right
+            display: flex
+            justify-content: flex-end
+            align-items: center
+    .slider
+        &__line
+            width: 337px
+            border: 1px solid #3e3649
+            position: relative
+            &::before
+                position: absolute
+                content: ''
+                width: 40%
+                border: 1px solid #12608e
+                top: -1px
+                left: 0
+        &__text
             font-size: 12px
+            font-weight: 700
+            margin-left: 15px
+            &--blue
+                color: #77d4c2
+
     @media(max-width: 960px)
         .main
             &__wrap
@@ -80,4 +105,10 @@
                 right: 0
                 left: 0
                 width: 90vmin
+            &__slider
+                flex-direction: column
+        .slider__line
+            width: 100%
+            &::before
+                width: 40%
 </style>

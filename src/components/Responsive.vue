@@ -1,12 +1,12 @@
 <template lang="pug">
-    <div>
+    div
         .responsive__button(@click="menuVisible = true"  v-if="!this.menuVisible")
             img(src="@/assets/menu.svg")
         transition(name="fade")
             .responsive__menu(v-if="this.menuVisible")
                 .responsive__close(@click="menuVisible = false")
                     img(src="@/assets/close.svg")
-                ul.menu__list
+                ul.menu__list(@click="menuVisible = false")
                     li.menu__item
                         a.menu__link(href="#steps") eBook Purchase
                     li.menu__item
@@ -19,7 +19,6 @@
                         a.menu__link(href="#contacts") Contact
                     li.menu__item
                         a.menu__link(href="#") Sign In
-    </div>
 </template>
 
 <script>
@@ -32,9 +31,9 @@
     }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass" scoped media="640px">
     .fade-enter, .fade-leave-to
-        opacity: 0
+        opacity: 0        
     .fade-enter-to, .fade-leave
         opacity: 1
     .fade-enter-active, .fade-leave-active

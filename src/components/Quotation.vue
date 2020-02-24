@@ -62,7 +62,7 @@
         .quotation
             & img
                 top: -50px
-                width: 60vmax
+                width: 350px
                 left: 50%
                 transform: translateX(-50%)
                 z-index: 2
