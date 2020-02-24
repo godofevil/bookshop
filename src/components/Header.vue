@@ -8,7 +8,7 @@
                 .header__search
                     input.search__input(placeholder="Search..." type="search")
                 .header__login
-                    a(href="/")
+                    div
                         img(src="@/assets/login.svg" alt="Login")
             nav.header__nav.nav
                 ul.nav__list
@@ -38,17 +38,11 @@
 <style lang="sass" scoped>
     @import './../sass/_colors.sass'
 
-    .search-fade-enter input
-        width: 20%
-    .search-fade-enter-to input
-        width: 100%
-    .search-fade-enter-active
-        transition: opacity .5s
-
     .header
         background: linear-gradient(270deg, rgba(26,35,75,1) 0%, rgba(22,22,55,1) 100%)
         &__wrap
             box-sizing: border-box
+            position: relative
             padding:
                 left: 70px
                 right: 70px
@@ -56,7 +50,6 @@
             padding:
                 top: 17px
                 bottom: 43px
-
             display: grid
             grid-template-columns: repeat(3, auto)
             align-items: center
@@ -69,12 +62,8 @@
             font-size: 24px
             color: #fff
             transition: color .3s
-        &__login svg
-            fill: #fff
-            transition: fill .3s
-        &__login:hover svg
-                fill: $primary-blue
-
+        &__login
+            cursor: pointer
     .search__input
         background: url('./../assets/search.svg') no-repeat 18px 50%
         width: 580px

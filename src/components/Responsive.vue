@@ -27,13 +27,16 @@
             return {
                 menuVisible: false
             }
-        }
+        },
+        created() {
+            window.addEventListener('click', () => this.menuVisible = false, true);            
+         },
     }
 </script>
 
 <style lang="sass" scoped media="640px">
     .fade-enter, .fade-leave-to
-        opacity: 0        
+        opacity: 0
     .fade-enter-to, .fade-leave
         opacity: 1
     .fade-enter-active, .fade-leave-active
@@ -79,6 +82,7 @@
             line-height: 20px
             font-weight: 700
             color: #1371a6
+
     .submenu__list
         .menu__item
             padding: 5px 0 5px 20px
