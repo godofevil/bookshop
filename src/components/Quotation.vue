@@ -61,12 +61,16 @@
     @media(max-width: 640px)
         .quotation
             & img
-                top: 0
-                width: 50vmax
+                top: -50px
+                width: 60vmax
+                left: 50%
+                transform: translateX(-50%)
+                z-index: 2
             &__wrap
                 grid-template-columns: auto
             &__right
                 padding-left: 0
+                padding-top: 215px
             &__author
                 padding-top: 20px
                 padding-bottom: 20px

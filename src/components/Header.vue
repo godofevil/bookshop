@@ -142,7 +142,7 @@
             &__top
                 grid-template-columns: 1fr
         .search__input
-            width: 30%
+            width: 180px
             transition: width .3s
             &:focus
                 width: 100%
